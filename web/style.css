@@ -1,14 +1,18 @@
-/* Styles for the body element */
+/* Reset and base styles */
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif; /* Added a default font for improved appearance */
     background-color: #fff;
 }
 
-/* Styles for the progress bar container */
+/* Progress bar styles */
+
 .progress-container {
     width: 300px;
     height: 8px;
@@ -18,7 +22,6 @@ body {
     transition: opacity 0.25s ease-out;
 }
 
-/* Styles for the progress bar */
 .progress-bar {
     display: block;
     height: 100%;
@@ -27,13 +30,21 @@ body {
     transition: width 0.5s ease;
 }
 
-/* CSS for a fade-in animation */
+/* Loading text styles */
+
+#loadingText {
+    margin-top: 10px;
+    color: #6a6a6a;
+    transition: opacity 0.25s ease-out;
+}
+
+/* Animation for the Flutter view and others */
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Keyframes for the fadeIn animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
